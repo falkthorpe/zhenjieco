@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220" fill="none">
+  <rect width="320" height="220" fill="#101317"/>
+  <g transform="translate(160 110)">
+    <rect x="-50" y="-60" width="100" height="120" rx="8" fill="none" stroke="#00ffa3" stroke-width="1.5"/>
+    <path d="M-30 -60 L-30 -78 a30 30 0 0 1 60 0 L30 -60" stroke="#00ffa3" stroke-width="1.5" fill="none"/>
+    <circle r="14" fill="none" stroke="#00d4ff" stroke-width="1.5"/>
+    <rect x="-3" y="0" width="6" height="14" fill="#00d4ff"/>
+    <rect x="-3" y="-3" width="6" height="6" fill="#00d4ff"/>
+    <g stroke="#00d4ff" stroke-width="0.5" opacity="0.5" fill="none">
+      <circle r="22"/><circle r="30" stroke-dasharray="2 4"/>
+    </g>
+  </g>
+  <text x="160" y="200" font-family="JetBrains Mono, monospace" font-size="10" fill="#00ffa3" text-anchor="middle" opacity="0.7">AES-256 · LOCAL-ONLY</text>
+  <rect x="10" y="10" width="60" height="18" rx="9" fill="rgba(0,255,163,0.12)" stroke="#00ffa3" stroke-opacity="0.5"/>
+  <text x="40" y="22" font-family="JetBrains Mono, monospace" font-size="9" fill="#00ffa3" text-anchor="middle">APP_04</text>
+</svg>

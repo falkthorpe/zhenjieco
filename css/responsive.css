@@ -1,0 +1,60 @@
+/* ============================================================
+   zhenjieco.com — Responsive Breakpoints
+   Range-targeted overrides only.
+   ============================================================ */
+
+/* ===== XL: 1440px+ ====================================== */
+@media (min-width: 1440px) {
+  :root { --container: 1480px; }
+}
+
+/* ===== L : 1080-1439 =================================== */
+@media (max-width: 1439px) and (min-width: 1081px) {
+  .hero__title { letter-spacing: -0.045em; }
+}
+
+/* ===== M : 720-1079 ==================================== */
+@media (max-width: 1079px) {
+  :root { --gutter: 24px; }
+  .nav__link { padding: 10px 12px; font-size: 13px; }
+  .hero__metric { padding: 0 14px; }
+}
+
+/* ===== S : 481-719 ====================================== */
+@media (max-width: 719px) {
+  :root { --gutter: 20px; --nav-h: 64px; }
+  .hero { padding-top: calc(var(--nav-h) + 24px); }
+  .hero__metrics { grid-template-columns: repeat(2, 1fr); gap: 24px 0; }
+  .hero__metric { border-left: 0; padding: 0 !important; }
+  .hero__metric:nth-child(2n+1) { border-left: 0; }
+  .hero__scroll { display: none; }
+  .marquee__track { gap: 40px; font-size: 12px; }
+  .split__art { aspect-ratio: 5 / 4; }
+  .spec__row { grid-template-columns: 1fr; gap: 8px; }
+  .process__step .num { width: 48px; height: 48px; }
+  .contact-grid { gap: 32px; }
+  .form { gap: 14px; }
+}
+
+/* ===== XS : <=480 ====================================== */
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .btn { padding: 11px 18px; font-size: 13px; }
+  .btn--lg { padding: 14px 24px; font-size: 14px; }
+  .hero__cta { flex-direction: column; align-items: stretch; }
+  .hero__cta .btn { width: 100%; }
+  .cta { padding: 40px 24px; }
+}
+
+/* ===== Landscape tiny phones =========================== */
+@media (max-height: 540px) and (orientation: landscape) {
+  .hero { min-height: 560px; }
+  .hero__scroll { display: none; }
+}
+
+/* ===== Print ============================================ */
+@media print {
+  .nav, .footer, .cursor, .loader, .ambient { display: none !important; }
+  body { background: #fff; color: #000; }
+  a { color: #000; text-decoration: underline; }
+}

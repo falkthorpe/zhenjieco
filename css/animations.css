@@ -1,0 +1,271 @@
+/* ============================================================
+   zhenjieco.com — Animations Library
+   All keyframes, motion utilities, computed effects.
+   ============================================================ */
+
+/* ===== 1. Rise / fade (page load) ========================== */
+@keyframes rise {
+  from { transform: translateY(110%); }
+  to { transform: translateY(0); }
+}
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fadein-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scalein {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes slidein-left {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slidein-right {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ===== 2. Pulse / heartbeat =============================== */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  60% { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  10% { transform: scale(1.15); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.08); }
+  40% { transform: scale(1); }
+}
+@keyframes heartbeat-slow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.6); }
+  50% { box-shadow: 0 0 0 18px rgba(0, 212, 255, 0); }
+}
+
+/* ===== 3. Scan / swipe line ============================== */
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  60% { transform: translateY(100%); }
+  100% { transform: translateY(100%); }
+}
+@keyframes swipe-line {
+  from { left: -100%; }
+  to { left: 200%; }
+}
+
+/* ===== 4. Marquee ========================================= */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* ===== 5. Loader bar ===================================== */
+@keyframes loadbar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes loader-count {
+  from { --p: 0; }
+  to { --p: 100; }
+}
+
+/* ===== 6. Spin / orbit ================================== */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+/* ===== 7. Float ========================================= */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  33% { transform: translateY(-10px) translateX(8px); }
+  66% { transform: translateY(8px) translateX(-6px); }
+}
+@keyframes drift {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(30px, -20px); }
+  50% { transform: translate(-20px, -40px); }
+  75% { transform: translate(-30px, 20px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ===== 8. Glow / shimmer ================================= */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 24px rgba(0, 212, 255, 0.35); }
+  50% { box-shadow: 0 0 48px rgba(0, 212, 255, 0.6); }
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  41% { opacity: 1; }
+  42% { opacity: 0.85; }
+  43% { opacity: 1; }
+  45% { opacity: 0.95; }
+  46% { opacity: 1; }
+}
+@keyframes soft-flicker {
+  0%, 100% { opacity: 1; filter: brightness(1); }
+  50% { opacity: 0.94; filter: brightness(1.04); }
+}
+
+/* ===== 9. Drawing / typography =========================== */
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+@keyframes text-scramble {
+  0% { letter-spacing: 0; opacity: 1; }
+  100% { letter-spacing: 0; opacity: 1; }
+}
+
+/* ===== 10. Background animations =========================== */
+@keyframes bg-pan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes gradient-flow {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+}
+@keyframes waveshift {
+  0% { transform: translateX(-25%); }
+  100% { transform: translateX(0%); }
+}
+
+/* ===== 11. Data / network visualizations ================== */
+@keyframes dash {
+  to { stroke-dashoffset: -1000; }
+}
+@keyframes dash-slow {
+  to { stroke-dashoffset: -100; }
+}
+@keyframes node-pulse {
+  0%, 100% { r: 3; opacity: 1; }
+  50% { r: 5; opacity: 0.6; }
+}
+@keyframes signal-flow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -200; }
+}
+@keyframes bar-wave {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1); }
+}
+
+/* ===== 12. Tilt / wobble ================================== */
+@keyframes wobble {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(1.2deg); }
+  75% { transform: rotate(-1.2deg); }
+}
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* ===== 13. Utility animation classes ====================== */
+.anim-rise { animation: rise 0.9s var(--ease-out) both; }
+.anim-fade { animation: fadein 0.9s var(--ease-out) both; }
+.anim-scale { animation: scalein 0.9s var(--ease-out) both; }
+.anim-slide-l { animation: slidein-left 0.9s var(--ease-out) both; }
+.anim-slide-r { animation: slidein-right 0.9s var(--ease-out) both; }
+.anim-delay-1 { animation-delay: 0.1s; }
+.anim-delay-2 { animation-delay: 0.2s; }
+.anim-delay-3 { animation-delay: 0.3s; }
+.anim-delay-4 { animation-delay: 0.4s; }
+.anim-delay-5 { animation-delay: 0.5s; }
+.anim-delay-6 { animation-delay: 0.6s; }
+
+.floater        { animation: float 4.5s ease-in-out infinite; }
+.floater-slow   { animation: float-slow 9s ease-in-out infinite; }
+.spinner        { animation: spin 8s linear infinite; }
+.spinner-slow   { animation: spin 14s linear infinite; }
+.spinner-fast   { animation: spin 3.5s linear infinite; }
+.spinner-rev    { animation: spin-reverse 6s linear infinite; }
+.wobble         { animation: wobble 4s ease-in-out infinite; }
+.heartbeat      { animation: heartbeat 2.4s ease-in-out infinite; }
+.flicker        { animation: flicker 3s linear infinite; }
+
+.shimmer {
+  background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2.4s linear infinite;
+}
+
+/* ===== 14. Magnetic, parallax helpers ==================== */
+[data-magnet] {
+  transition: transform 0.3s var(--ease-out);
+}
+[data-tilt] {
+  transform-style: preserve-3d;
+  transition: transform 0.3s var(--ease-out);
+}
+
+/* ===== 15. Decorative orbs that float behind content ===== */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.5;
+}
+.orb--cyan { background: radial-gradient(circle, var(--accent), transparent 60%); }
+.orb--purple { background: radial-gradient(circle, var(--accent-4), transparent 60%); }
+.orb--green { background: radial-gradient(circle, var(--accent-2), transparent 60%); }
+.orb--magenta { background: radial-gradient(circle, var(--accent-3), transparent 60%); }
+
+/* ===== 16. Magnetic button spotlight =================== */
+.btn-magnet { position: relative; overflow: hidden; }
+
+/* ===== 17. Smooth state transitions ==================== */
+* { transition: color var(--t-fast), background-color var(--t-fast), border-color var(--t-fast); }
+
+/* Reduce motion if requested */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== 18. Marquee pause on hover ====================== */
+.marquee:hover .marquee__track { animation-play-state: paused; }

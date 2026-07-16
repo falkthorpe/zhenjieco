@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" fill="none">
+  <defs><linearGradient id="n4g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00d4ff"/><stop offset="1" stop-color="#b794ff"/></linearGradient></defs>
+  <rect width="640" height="360" fill="#0a0c10"/>
+  <g transform="translate(320 180)" stroke="url(#n4g)" fill="none" stroke-width="1.5">
+    <rect x="-100" y="-100" width="200" height="200"/>
+    <rect x="-80" y="-80" width="160" height="160"/>
+    <rect x="-60" y="-60" width="120" height="120"/>
+    <rect x="-40" y="-40" width="80" height="80"/>
+    <rect x="-20" y="-20" width="40" height="40"/>
+    <line x1="-200" y1="0" x2="-100" y2="0"/>
+    <line x1="100" y1="0" x2="200" y2="0"/>
+    <line x1="0" y1="-200" x2="0" y2="-100"/>
+    <line x1="0" y1="100" x2="0" y2="200"/>
+  </g>
+  <circle cx="320" cy="180" r="8" fill="#00d4ff">
+    <animate attributeName="r" values="8;14;8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <g font-family="JetBrains Mono, monospace" font-size="11" fill="#b794ff" opacity="0.6">
+    <text x="40" y="40">SECTION / 01</text>
+    <text x="600" y="40" text-anchor="end">ENGINEERING</text>
+  </g>
+</svg>

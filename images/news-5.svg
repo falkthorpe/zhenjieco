@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" fill="none">
+  <defs><radialGradient id="n5r" cx="50%" cy="50%"><stop offset="0" stop-color="#00ffa3" stop-opacity="0.4"/><stop offset="1" stop-color="#00ffa3" stop-opacity="0"/></radialGradient></defs>
+  <rect width="640" height="360" fill="#0a0c10"/>
+  <circle cx="320" cy="180" r="200" fill="url(#n5r)"/>
+  <g transform="translate(320 180)" stroke="#00ffa3" fill="none" stroke-width="2">
+    <rect x="-80" y="-100" width="160" height="200" rx="10" opacity="0.4"/>
+    <path d="M-50 -100 V-130 a50 50 0 0 1 100 0 V-100" opacity="0.4"/>
+    <circle r="20" stroke-width="1.5"/>
+    <rect x="-5" y="0" width="10" height="22"/>
+    <rect x="-5" y="-5" width="10" height="10"/>
+  </g>
+  <g transform="translate(320 60)" fill="#00ffa3">
+    <rect x="-2" y="-30" width="4" height="30">
+      <animate attributeName="height" values="30;5;30" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-30;-5;-30" dur="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-12" y="-30" width="4" height="20" opacity="0.6">
+      <animate attributeName="height" values="20;6;20" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="8" y="-30" width="4" height="14" opacity="0.6">
+      <animate attributeName="height" values="14;4;14" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="11" fill="#00ffa3" opacity="0.6">
+    <text x="40" y="40">SECTION / 05</text>
+    <text x="600" y="40" text-anchor="end">DATA SOVEREIGNTY</text>
+  </g>
+</svg>

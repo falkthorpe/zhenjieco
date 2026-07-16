@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>zhenjieco · Engineering the Future of Digital Experience</title>
+  <meta name="description" content="zhenjieco is an independent R&amp;D studio focused on programmatic technology, immersive interaction design, and privacy-first product engineering. Based in the Virginia Innovation Center, USA.">
+  <meta name="keywords" content="zhenjieco, R&D studio, mobile applications, programmatic generation, privacy-first, immersive design, app development, App Store, software studio">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="zhenjieco">
+  <meta name="theme-color" content="#000000">
+  <meta name="application-name" content="zhenjieco">
+  <meta name="apple-mobile-web-app-title" content="zhenjieco">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="canonical" href="https://zhenjieco.com/">
+  <link rel="alternate" hreflang="en" href="https://zhenjieco.com/">
+  <link rel="alternate" hreflang="x-default" href="https://zhenjieco.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="zhenjieco">
+  <meta property="og:title" content="zhenjieco · Engineering the Future of Digital Experience">
+  <meta property="og:description" content="An independent R&D studio focused on programmatic technology, immersive interaction design, and privacy-first product engineering.">
+  <meta property="og:url" content="https://zhenjieco.com/">
+  <meta property="og:image" content="https://zhenjieco.com/images/hero-visual.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="zhenjieco · Engineering the Future of Digital Experience">
+  <meta name="twitter:description" content="An independent R&D studio focused on programmatic technology, immersive interaction design, and privacy-first product engineering.">
+  <meta name="twitter:image" content="https://zhenjieco.com/images/hero-visual.svg">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "zhenjieco",
+    "alternateName": "zhenjieco.com",
+    "url": "https://zhenjieco.com",
+    "logo": "https://zhenjieco.com/images/logo.svg",
+    "email": "support@zhenjieco.com",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "contact@zhenjieco.com",
+      "contactType": "customer support",
+      "areaServed": ["US", "EU", "GB"],
+      "availableLanguage": ["English"]
+    }],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Virginia Innovation Center",
+      "addressCountry": "US",
+      "addressRegion": "VA"
+    },
+    "description": "An independent R&D studio focused on programmatic technology, immersive interaction design, and privacy-first product engineering."
+  }
+  </script>
+</head>
+<body>
+  <div class="ambient"></div>
+
+  <!-- Loading screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <img src="images/logo.svg" alt="" width="32" height="32">
+        <span style="font-family:'JetBrains Mono',monospace;color:#00d4ff;">zhenjieco.com</span>
+      </div>
+      <div class="loader__bar"></div>
+      <div class="loader__num">// initialising system</div>
+    </div>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="zhenjieco home">
+        <span class="nav__logo"><img src="images/logo.svg" alt="" width="22" height="22"></span>
+        <span class="nav__wordmark">zhenjie<span style="color:#00d4ff">.co</span></span>
+      </a>
+      <nav class="nav__menu" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link" href="advantages.html">Advantages</a>
+        <a class="nav__link" href="news.html">News</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--sm btn--primary" href="contact.html" data-magnet>
+          <span>Start a Project</span>
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <img class="hero__img" src="images/hero-bg.png" alt="" aria-hidden="true" width="2400" height="1350" loading="eager" fetchpriority="high">
+    <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__eyebrow reveal">
+          <span class="pulse"></span>
+          <span>// ONLINE · ACCEPTING PROJECTS FOR 2026</span>
+        </div>
+        <h1 class="hero__title h-display">
+          <span class="line"><span>Engineering</span></span>
+          <span class="line"><span>the Future of <span class="accent gradient-text">Digital</span></span></span>
+          <span class="line"><span>Experience.</span></span>
+        </h1>
+        <p class="hero__subtitle reveal anim-delay-3">
+          zhenjieco is an independent R&amp;D studio focused on programmatic technology and immersive interaction design. We build a curated matrix of privacy-first applications that ship elegant, human-centred software to the global App Store.
+        </p>
+        <div class="hero__cta reveal anim-delay-4">
+          <a class="btn btn--primary btn--lg" href="services.html" data-magnet>
+            <span>Explore Our Work</span>
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn--lg" href="contact.html" data-magnet>
+            <span>Contact Studio</span>
+          </a>
+        </div>
+        <div class="hero__metrics reveal anim-delay-5">
+          <div class="hero__metric">
+            <span class="num" data-counter="32" data-suffix="+">0</span>
+            <span class="label">Apps in Matrix</span>
+          </div>
+          <div class="hero__metric">
+            <span class="num" data-counter="14" data-suffix="">0</span>
+            <span class="label">Years Building</span>
+          </div>
+          <div class="hero__metric">
+            <span class="num" data-counter="100" data-suffix="%">0</span>
+            <span class="label">Local-First Storage</span>
+          </div>
+          <div class="hero__metric">
+            <span class="num" data-counter="180" data-suffix="+">0</span>
+            <span class="label">Countries Served</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <span class="line-anim"></span>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE STRIP ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span><span class="dot"></span>PROGRAMMATIC AUDIO</span>
+      <span><span class="dot"></span>VISUAL INTERACTION DESIGN</span>
+      <span><span class="dot"></span>PRIVACY-FIRST ENGINEERING</span>
+      <span><span class="dot"></span>LOCAL-FIRST DATA</span>
+      <span><span class="dot"></span>IMMERSIVE INTERACTION</span>
+      <span><span class="dot"></span>PRODUCT INNOVATION</span>
+      <span><span class="dot"></span>RUNTIME GENERATION</span>
+      <span><span class="dot"></span>ZEN AESTHETIC</span>
+      <span><span class="dot"></span>PROGRAMMATIC AUDIO</span>
+      <span><span class="dot"></span>VISUAL INTERACTION DESIGN</span>
+      <span><span class="dot"></span>PRIVACY-FIRST ENGINEERING</span>
+      <span><span class="dot"></span>LOCAL-FIRST DATA</span>
+      <span><span class="dot"></span>IMMERSIVE INTERACTION</span>
+      <span><span class="dot"></span>PRODUCT INNOVATION</span>
+      <span><span class="dot"></span>RUNTIME GENERATION</span>
+      <span><span class="dot"></span>ZEN AESTHETIC</span>
+    </div>
+  </div>
+
+  <!-- ============ PHILOSOPHY SPLIT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="split__art reveal reveal--left">
+          <img src="images/split-1.svg" alt="Privacy architecture diagram" width="600" height="750" loading="lazy">
+        </div>
+        <div class="split__copy reveal reveal--right">
+          <span class="eyebrow">OUR PHILOSOPHY</span>
+          <h2 class="h-1">Minimalist by design.<br><span class="gradient-text">Privacy by default.</span></h2>
+          <p class="lead">
+            We are a research-driven product studio obsessed with three ideas: minimal design, privacy as a baseline, and experience as the ultimate measure of craft. Every line of code, every pixel, every motion — they exist to disappear in service of the user.
+          </p>
+          <ul class="split__list">
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Local-first data processing — your bytes never leave your device unless you say so.</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Runtime generative systems that produce organic, non-repeating interactions.</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>End-to-end encryption with zero cloud persistence for sensitive surfaces.</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Zen-inspired aesthetics: deliberate restraint over decorative excess.</li>
+          </ul>
+          <a class="btn btn--ghost mt-8" href="advantages.html" data-magnet>
+            <span>Read the full manifest</span>
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat__num" data-counter="32" data-suffix="">0</span>
+          <span class="stat__label">Active applications in our ecosystem matrix</span>
+          <div class="stat__bg"></div>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-counter="14" data-suffix="yrs">0</span>
+          <span class="stat__label">Of cumulative engineering and product experience</span>
+          <div class="stat__bg"></div>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-counter="180" data-suffix="+">0</span>
+          <span class="stat__label">Countries where our products are currently used</span>
+          <div class="stat__bg"></div>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-counter="0" data-suffix="">0<span style="color:var(--accent)">.</span>3</span>
+          <span class="stat__label">Second median cold-start time across the matrix</span>
+          <div class="stat__bg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APP MATRIX ============ -->
+  <section class="section" id="matrix">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">PRODUCT MATRIX · APP STORE</span>
+        <h2 class="h-1">A studio of <span class="gradient-text">focused,</span> use-case-driven apps.</h2>
+        <p class="lead">Local workflow automation, collectibles valuation, biometric training records, encrypted property vaults, inspiration capture, and cyclical budget engines — each app is its own focused craft. Every product shares the same data sovereignty commitments: what is created on-device stays on-device, by default.</p>
+      </div>
+      <div class="apps stagger">
+        <article class="app" data-tilt>
+          <div class="app__visual">
+            <img src="images/app-1.svg" alt="Workflow automation app icon" width="320" height="220" loading="lazy">
+            <span class="app__platform">iOS</span>
+            <span class="app__price">FREE</span>
+          </div>
+          <div class="app__body">
+            <h3 class="app__title">Riverflow · Workflow Automation</h3>
+            <p class="app__desc">Local-first scripting that runs repetitive tasks without sending a single byte to the cloud.</p>
+            <div class="app__tags"><span class="app__tag">iOS</span><span class="app__tag">iPadOS</span><span class="app__tag">SCRIPT</span></div>
+          </div>
+        </article>
+        <article class="app" data-tilt>
+          <div class="app__visual">
+            <img src="images/app-2.svg" alt="Collectibles valuation app icon" width="320" height="220" loading="lazy">
+            <span class="app__platform">iOS</span>
+            <span class="app__price">FREE</span>
+          </div>
+          <div class="app__body">
+            <h3 class="app__title">Vault-Index · Collectibles Valuation</h3>
+            <p class="app__desc">Dynamic value engine for cards, figures, watches and memorabilia — purely offline calculations.</p>
+            <div class="app__tags"><span class="app__tag">iOS</span><span class="app__tag">WIDGETS</span><span class="app__tag">OFFLINE</span></div>
+          </div>
+        </article>
+        <article class="app" data-tilt>
+          <div class="app__visual">
+            <img src="images/app-3.svg" alt="Body training recorder app icon" width="320" height="220" loading="lazy">
+            <span class="app__platform">iOS</span>
+            <span class="app__price">FREE</span>
+          </div>
+          <div class="app__body">
+            <h3 class="app__title">Apex-Form · Body Training Recorder</h3>
+            <p class="app__desc">Track lifts, posture data and biometric trends with a clean, zero-cloud architecture.</p>
+            <div class="app__tags"><span class="app__tag">iOS</span><span class="app__tag">HEALTH</span><span class="app__tag">PRIVATE</span></div>
+          </div>
+        </article>
+        <article class="app" data-tilt>
+          <div class="app__visual">
+            <img src="images/app-4.svg" alt="Encrypted property vault app icon" width="320" height="220" loading="lazy">
+            <span class="app__platform">iOS</span>
+            <span class="app__price">FREE</span>
+          </div>
+          <div class="app__body">
+            <h3 class="app__title">Atlas-Vault · Property Documents</h3>
+            <p class="app__desc">AES-256 encrypted vault for property, vehicle and other high-value document records.</p>
+            <div class="app__tags"><span class="app__tag">iOS</span><span class="app__tag">ENCRYPTED</span><span class="app__tag">PDF</span></div>
+          </div>
+        </article>
+        <article class="app" data-tilt>
+          <div class="app__visual">
+            <img src="images/app-5.svg" alt="Inspiration capture app icon" width="320" height="220" loading="lazy">
+            <span class="app__platform">iOS</span>
+            <span class="app__price">FREE</span>
+          </div>
+          <div class="app__body">
+            <h3 class="app__title">Lumen · Inspiration Capture</h3>
+            <p class="app__desc">Capture fragments of ideas with auto-classification into your private knowledge garden.</p>
+            <div class="app__tags"><span class="app__tag">iOS</span><span class="app__tag">NOTES</span><span class="app__tag">GARDEN</span></div>
+          </div>
+        </article>
+        <article class="app" data-tilt>
+          <div class="app__visual">
+            <img src="images/app-6.svg" alt="Cyclical budget engine app icon" width="320" height="220" loading="lazy">
+            <span class="app__platform">iOS</span>
+            <span class="app__price">FREE</span>
+          </div>
+          <div class="app__body">
+            <h3 class="app__title">Pulse-Budget · Cyclical Engine</h3>
+            <p class="app__desc">A budgeting cycle planner that runs entirely on-device for absolute privacy.</p>
+            <div class="app__tags"><span class="app__tag">iOS</span><span class="app__tag">FINANCE</span><span class="app__tag">LOCAL</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-12 reveal">
+        <a class="btn" href="services.html" data-magnet>
+          <span>See full capability matrix</span>
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH DEPTH SPLIT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="split split--reverse">
+        <div class="split__art reveal reveal--left">
+          <img src="images/split-2.svg" alt="Generative design illustration" width="600" height="750" loading="lazy">
+        </div>
+        <div class="split__copy reveal reveal--right">
+          <span class="eyebrow">TECHNICAL DEPTH</span>
+          <h2 class="h-1">Programmatic generation. <span class="gradient-text">No two sessions the same.</span></h2>
+          <p class="lead">We invest deeply in runtime generative systems. Instead of fixed assets and template screens, our products compose themselves moment-to-moment — yielding experiences that feel organic, varied and endlessly surprising.</p>
+          <ul class="split__list">
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Audio synthesis pipelines that model timbre, spatialisation and rhythm.</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Visual generators for typography, motion and procedural textures.</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Interaction graphs that adapt to user intent and biometric state.</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Cross-platform native performance budgets under 16 ms per frame.</li>
+          </ul>
+          <a class="btn btn--ghost mt-8" href="advantages.html" data-magnet>
+            <span>Read the engineering notes</span>
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TERMINAL SECTION ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr; gap: 24px;">
+        <span class="eyebrow">// PRINCIPLE_001</span>
+        <h2 class="h-1">"Software should fade,<br>like a well-tuned instrument."</h2>
+      </div>
+      <div class="terminal mt-12 reveal" data-tilt>
+        <div class="terminal__bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="title">~/zhenjieco/principles.js</span>
+        </div>
+        <pre class="terminal__body"><span class="c">// A snapshot of how we approach every project</span>
+<span class="k">const</span> studio = <span class="b">new</span> <span class="n">Zhenjieco</span>();
+
+<span class="k">await</span> studio.<span class="n">commit</span>({
+  principles: [
+    <span class="s">'data sovereignty'</span>,
+    <span class="s">'generative composition'</span>,
+    <span class="s">'restraint over decoration'</span>,
+    <span class="s">'transparency in metrics'</span>,
+  ],
+  tools: [ <span class="s">'local'</span>, <span class="s">'first'</span> ],
+  cloud: <span class="n">false</span>,
+});
+
+<span class="k">const</span> product = <span class="k">await</span> studio.<span class="n">craft</span>({
+  privacy: <span class="s">'baseline'</span>,
+  craft: <span class="s">'meticulous'</span>,
+  ship: <span class="s">'global'</span>,
+});
+
+product.<span class="n">onLaunch</span>(() =&gt; <span class="n">console</span>.<span class="n">log</span>(<span class="s">'Hello, world.'</span>));</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORLD MAP ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">GLOBAL DISTRIBUTION</span>
+        <h2 class="h-1">Built in Virginia. <span class="gradient-text">Used around the world.</span></h2>
+        <p class="lead">Our products have shipped to users in over 180 countries. We measure ourselves by the depth of attention in each market, not the size of any install banner.</p>
+      </div>
+      <div class="reveal">
+        <img src="images/world-map.svg" alt="Worldwide distribution map" width="1200" height="700" loading="lazy" style="width:100%; height:auto; border-radius: var(--r-xl); border: 1px solid var(--line);">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__inner">
+          <span class="eyebrow">// READY TO BUILD?</span>
+          <h2 class="cta__title">Let's design the next interface that <span class="gradient-text">people actually love to use.</span></h2>
+          <p class="cta__desc">We take on a small number of projects each year. If you have a privacy-sensitive product idea or a creative tool that needs disciplined craft, we'd love to hear from you.</p>
+          <a class="btn btn--primary btn--lg" href="contact.html" data-magnet>
+            <span>Start a Conversation</span>
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="nav__brand" href="index.html" aria-label="zhenjieco home">
+            <span class="nav__logo"><img src="images/logo.svg" alt="" width="22" height="22"></span>
+            <span class="nav__wordmark">zhenjie<span style="color:#00d4ff">.co</span></span>
+          </a>
+          <p>zhenjieco is an independent R&amp;D studio practicing minimalist design, privacy-first engineering and experiential product craft from the Virginia Innovation Center, USA.</p>
+        </div>
+        <div>
+          <div class="footer__heading">STUDIO</div>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="advantages.html">Advantages</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">CONTACT</div>
+          <ul class="footer__list">
+            <li><a href="mailto:support@zhenjieco.com">support@zhenjieco.com</a></li>
+            <li><a href="mailto:contact@zhenjieco.com">contact@zhenjieco.com</a></li>
+            <li><a href="mailto:falkthorpe@zhenjieco.com">falkthorpe@zhenjieco.com</a></li>
+            <li>Virginia Innovation Center, USA</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">LEGAL</div>
+          <ul class="footer__list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html#cookies">Cookies</a></li>
+            <li><a href="privacy.html#children">Children's Privacy</a></li>
+            <li><a href="privacy.html#ads">Ad Disclosures</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> zhenjieco · All rights reserved · Engineered in Virginia, USA.</span>
+        <div class="footer__legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html#ads">Ad Disclosure</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/effects.js" defer></script>
+</body>
+</html>

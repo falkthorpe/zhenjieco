@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" fill="none">
+  <rect width="1200" height="700" fill="#0a0c10"/>
+  <g fill="#16191e" stroke="#292d35" stroke-width="0.5">
+    <path d="M150 200 Q200 150 280 160 Q320 180 340 220 Q360 280 320 320 Q260 380 220 360 Q160 320 150 280 Z"/>
+    <path d="M380 140 Q460 130 540 160 Q600 180 620 220 Q640 280 580 320 Q480 350 400 320 Q360 280 380 220 Z"/>
+    <path d="M660 180 Q780 160 880 200 Q940 260 900 320 Q780 340 700 320 Q640 280 660 220 Z"/>
+    <path d="M180 380 Q280 360 360 400 Q400 460 360 520 Q280 540 220 520 Q180 460 180 420 Z"/>
+    <path d="M420 380 Q560 380 700 420 Q780 460 760 540 Q680 580 560 580 Q440 540 420 460 Z"/>
+    <path d="M780 380 Q880 360 960 400 Q1000 480 940 540 Q860 560 800 520 Q780 460 780 420 Z"/>
+  </g>
+  <g fill="#00d4ff" stroke="none">
+    <circle cx="280" cy="250" r="3">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="220" r="3">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="250" r="3">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="450" r="3">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="580" cy="480" r="3">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="880" cy="460" r="3">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <line x1="280" y1="250" x2="480" y2="220" stroke="#00d4ff" stroke-width="0.5" opacity="0.5"/>
+  <line x1="480" y1="220" x2="780" y2="250" stroke="#00d4ff" stroke-width="0.5" opacity="0.5"/>
+  <line x1="280" y1="250" x2="280" y2="450" stroke="#00d4ff" stroke-width="0.5" opacity="0.5"/>
+  <line x1="280" y1="450" x2="580" y2="480" stroke="#00d4ff" stroke-width="0.5" opacity="0.5"/>
+  <line x1="580" y1="480" x2="880" y2="460" stroke="#00d4ff" stroke-width="0.5" opacity="0.5"/>
+  <text x="600" y="640" font-family="JetBrains Mono, monospace" font-size="14" fill="#00d4ff" text-anchor="middle" opacity="0.7">// user.distribution.live</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220" fill="none">
+  <defs><linearGradient id="a5g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff3b6b"/><stop offset="1" stop-color="#b794ff"/></linearGradient></defs>
+  <rect width="320" height="220" fill="#101317"/>
+  <g transform="translate(160 110)">
+    <circle r="60" fill="url(#a5g)" opacity="0.15"/>
+    <circle r="60" fill="none" stroke="url(#a5g)" stroke-width="1.5"/>
+    <path d="M-20 0 L-10 -20 L0 0 L10 -20 L20 0 Z" fill="#ff3b6b"/>
+    <circle r="3" cy="-30" fill="#b794ff">
+      <animate attributeName="opacity" values="1;0;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-30" cy="-30" r="2" fill="#00d4ff">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g stroke="#b794ff" stroke-width="0.6" opacity="0.5" fill="none">
+    <path d="M40 40 L80 40 M40 50 L100 50 M40 60 L70 60"/>
+    <path d="M240 40 L290 40 M240 50 L270 50"/>
+  </g>
+  <text x="160" y="200" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff3b6b" text-anchor="middle" opacity="0.7">INSPIRATION // CAPTURE</text>
+  <rect x="10" y="10" width="60" height="18" rx="9" fill="rgba(255,59,107,0.12)" stroke="#ff3b6b" stroke-opacity="0.5"/>
+  <text x="40" y="22" font-family="JetBrains Mono, monospace" font-size="9" fill="#ff3b6b" text-anchor="middle">APP_05</text>
+</svg>

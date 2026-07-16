@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" fill="none">
+  <defs>
+    <linearGradient id="n1g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00d4ff"/><stop offset="1" stop-color="#00ffa3"/></linearGradient>
+    <radialGradient id="n1r" cx="50%" cy="50%"><stop offset="0" stop-color="#00ffa3" stop-opacity="0.4"/><stop offset="1" stop-color="#00ffa3" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="#0a0c10"/>
+  <circle cx="320" cy="180" r="180" fill="url(#n1r)"/>
+  <g transform="translate(320 180)" stroke="#00ffa3" stroke-width="1.5" fill="none">
+    <path d="M0 -90 V90 M-90 0 H90" opacity="0.4"/>
+    <circle r="60" stroke="url(#n1g)" stroke-width="2"/>
+    <circle r="40" stroke="#00ffa3" stroke-width="1" stroke-dasharray="3 4" opacity="0.6"/>
+    <circle r="20" fill="rgba(0,255,163,0.15)"/>
+    <path d="M-12 -8 L-3 4 L14 -10" stroke="#00ffa3" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="11" fill="#00ffa3" opacity="0.6">
+    <text x="40" y="40">SECTION / 04</text>
+    <text x="600" y="40" text-anchor="end">PRIVACY-FIRST</text>
+    <text x="40" y="330">local-data://processing</text>
+  </g>
+</svg>
