@@ -1,5 +1,5 @@
 #google
-google.com, pub-5170583469440916, DIRECT, f08c47fec0942fa0
+google.com, pub-8229487645635080, DIRECT, f08c47fec0942fa0
 #meta
 facebook.com, 1670676281359499, DIRECT, c3e20eee3f780d68
 facebook.com, 2298195351078884, RESELLER, c3e20eee3f780d68
